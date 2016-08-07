@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Song Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="javascripts/application.js"></script>
+</head>
+<body>
+	
+	<form class='js-song-name-form song-form'>
+	  	Song name:<br>
+	  	<input id="song-name" type="text"><br>
+	  	<button type="submit">Search</button>
+	</form>
+
+<!-- +++++++++++++++++++++++Player+++++++++++++++++++++++++++ -->
+	
+	<div class="widget">
+		
+		<div class="header">
+			<!-- Try adding/removing these classes: -->
+			<!-- disabled -->
+			<!-- playing -->
+			<div class="btn-play disabled"></div>
+
+			<div class="metadata">
+			  <p class="title">Hunger of The Pine</p>
+			  <button class="author author-btn" type="button" data-track-artist="">Alt-J</button>
+			  <!-- <p class="author">alt-J</p> -->
+
+			  <div class="seekbar">
+			    <progress class="js-time-bar" value="5" max="30"></progress>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="cover">
+			<img class="track_img" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+		</div>
+
+		<audio class="js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+	</div>
+<!-- ==========================MODAL======================== -->
+	
+	<div class="modal fade js-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <!-- Close button -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+
+        <h2 class="js-modal-title">This is the modal's header.</h2>
+      </div>
+
+      <div class="modal-body js-modal-body modal_body">
+        <div class="js-artist-img artist-img"></div>
+        <div class="js-artist-details artist-details"></div>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	
+
+</body>
+</html>
+

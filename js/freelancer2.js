@@ -28,7 +28,7 @@ $( document ).ready(function() {
 	$(".rojas-catering").on({
 	    mouseenter: function () {
 	        //stuff to do on mouse enter
-	        var description = "A Ruby on Rails application with a PostgreSQL database. Designed for a catering company, allows customers to plan their catering events and get quotes in real time. Also provides the catering company (admin login) with a clean interface to manage all their event details."
+	        var description = "A Ruby on Rails application with a PostgreSQL database. Designed for a catering company, allows customers to plan their catering events and get quotes in real time. Also provides an admin login to the catering company, where they can access a calendar based interface to manage all their event details."
 	        $(".project-description").text(description);
 	    },
 	    mouseleave: function () {

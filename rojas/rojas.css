@@ -26,12 +26,21 @@ p.description {
     font-size: 14px;
     color: #18BC9C;
     font-style: italic;
-    margin: 0 0 25px 0;
+    margin: 0 0 1px 0;
     padding: 0 5px;
     position:relative;
     bottom:15px; 
 }
 
+p.description2 {
+    font-size: 14px;
+    color: #18BC9C;
+    font-style: italic;
+    margin: 0 0 8px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
 .search-form{
   border: 0.5px solid black;
   
@@ -49,4 +58,14 @@ p.description {
   width:70vw;
   height: auto;
 }
+
+.underlined{
+  text-decoration: underline;
+  font-weight: 700;
+}
 /*++++++++++++++++Sebas+++++++++++++*/
+
+
+
+
+

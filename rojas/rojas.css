@@ -22,6 +22,7 @@
   opacity: 0.5
 }
 
+
 p.description {
     font-size: 14px;
     color: #18BC9C;
@@ -41,6 +42,18 @@ p.description2 {
     position:relative;
     bottom:15px; 
 }
+
+p.description3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2C3E50;
+    font-style: italic;
+    margin: 0 0 8px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
+
 .search-form{
   border: 0.5px solid black;
   

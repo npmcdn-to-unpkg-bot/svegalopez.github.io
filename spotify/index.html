@@ -1,23 +1,47 @@
 <html>
 <head>
 	<title>Song Player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret One" rel="stylesheet" type="text/css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="javascripts/application.js"></script>
+	<script src="https://use.fontawesome.com/9b43c1e964.js"></script>
 </head>
 <body>
 	
-	<form class='js-song-name-form song-form'>
-	  	Song name:<br>
-	  	<input id="song-name" type="text"><br>
-	  	<button type="submit">Search</button>
-	</form>
+	<div>
+      <center>
+      <!-- <a href="../../index.html#portfolio"> -->
+      <i class="back-arrow fa fa-chevron-circle-left fa-5x" aria-hidden="true" onclick="location.href='../pizza/src/index.html#portfolio';"></i>
+      <!-- </a> -->
+      
+      <i class="back-arrow fa fa-chevron-circle-right fa-5x" aria-hidden="true"></i>
+      </center>
+    </div>
 
-<!-- +++++++++++++++++++++++Player+++++++++++++++++++++++++++ -->
-	
-	<div class="widget">
+	<div class="container-fuid">
+	<div class="row">
+		<div class="col-md-12">
+			<center>
+				<h2 class="pizza-heading">SONG PLAYER</h2>
+				<p class="description">Find and play any song from the spotify API.</p>
+				<form class='js-song-name-form song-form font'>
+			  	Find Music:<br>
+			  	<input id="song-name" type="text" placeholder="Artist, Song"><br>
+			  	<button class="btn btn-default font" type="submit">Search</button>
+				</form>
+				<p class="not-found"></p>
+			</center>
+		</div>
+	</div>
+	<!-- +++++++++++++++++++++++Player+++++++++++++++++++++++++++ -->
+	<div class="row font">
+		<div class="col-md-12">
+			<div class="widget">
 		
 		<div class="header">
 			<!-- Try adding/removing these classes: -->
@@ -28,7 +52,7 @@
 			<div class="metadata">
 			  <p class="title">Hunger of The Pine</p>
 			  <button class="author author-btn" type="button" data-track-artist="">Alt-J</button>
-			  <!-- <p class="author">alt-J</p> -->
+			  
 
 			  <div class="seekbar">
 			    <progress class="js-time-bar" value="5" max="30"></progress>
@@ -42,6 +66,11 @@
 
 		<audio class="js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
 	</div>
+		</div>
+	</div>
+	</div>
+
+	
 <!-- ==========================MODAL======================== -->
 	
 	<div class="modal fade js-modal">
@@ -62,9 +91,9 @@
         <div class="js-artist-details artist-details"></div>
       </div>
 
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
 	
 
 </body>

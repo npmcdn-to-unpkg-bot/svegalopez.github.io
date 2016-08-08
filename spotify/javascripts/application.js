@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+$('.js-time-bar').attr('value',0);
+
 // =====================Event Handlers===================================
 	
 	$(".js-song-name-form").on("submit", function(event){
@@ -14,7 +16,13 @@ $(document).ready(function(){
 			},
 			success: function(response){
 				console.log('succesful request');
+				$('.not-found').empty();
 				var track_info = response.tracks.items[0];
+
+				if (track_info == null) {
+					//alert("Can't find that one. Please try another song.")
+					$('.not-found').text("Ooops, cannot find that! Try another song")
+				}
 	
 				var track_info = {
 					track_name : response.tracks.items[0].name,
@@ -22,8 +30,17 @@ $(document).ready(function(){
 					track_url : response.tracks.items[0].preview_url,
 					track_artist : response.tracks.items[0].artists[0].name
 				};
+				
+				if ($('.btn-play').hasClass('disabled')){
+					$('.btn-play').toggleClass('disabled');
+					
+				}
+
+				if ($('.btn-play').hasClass('playing')){
+					$('.btn-play').toggleClass('playing')
+				}
 				updatePlayerInfo(track_info);
-				$('.btn-play').toggleClass('disabled');
+				
 			}
 		});
 	});

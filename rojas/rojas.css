@@ -1,0 +1,52 @@
+/*++++++++++++++++Sebas+++++++++++++*/
+
+.font{
+ font-family: "Poiret One", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+ font-weight: 900;
+}
+
+.pizza-heading{
+  color: #2C3E50;
+  font-size: 3em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.back-arrow{
+  color:#2C3E50;
+}
+.back-arrow:hover{
+  opacity: 0.3
+}
+
+.rojas-img:hover{
+  opacity: 0.5
+}
+
+p.description {
+    font-size: 14px;
+    color: #18BC9C;
+    font-style: italic;
+    margin: 0 0 25px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
+
+.search-form{
+  border: 0.5px solid black;
+  
+}
+
+.not-found{
+  position:relative;
+  padding:0px 0px 0px 0px;
+  margin: 0px;
+  font-family: "Poiret One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.rojas-img {
+  width:70vw;
+  height: auto;
+}
+/*++++++++++++++++Sebas+++++++++++++*/

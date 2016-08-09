@@ -1,0 +1,168 @@
+
+/*++++++++++++++++Sebas+++++++++++++*/
+
+.font{
+ font-family: "Poiret One", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+ font-weight: 900;
+}
+
+.pizza-heading{
+  color: #2C3E50;
+  font-size: 3em;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.back-arrow{
+  color:#2C3E50;
+}
+.back-arrow:hover{
+  opacity: 0.3
+}
+
+.rojas-img:hover{
+  opacity: 0.5
+}
+
+
+p.description {
+    font-size: 14px;
+    color: #18BC9C;
+    font-style: italic;
+    margin: 0 0 1px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
+
+p.description2 {
+    font-size: 14px;
+    color: #18BC9C;
+    font-style: italic;
+    margin: 0 0 8px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
+
+p.description3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2C3E50;
+    font-style: italic;
+    margin: 0 0 8px 0;
+    padding: 0 5px;
+    position:relative;
+    bottom:15px; 
+}
+
+.search-form{
+  border: 0.5px solid black;
+  
+}
+
+.not-found{
+  position:relative;
+  padding:0px 0px 0px 0px;
+  margin: 0px;
+  font-family: "Poiret One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.rojas-img {
+  width:70vw;
+  height: auto;
+}
+
+.underlined{
+  text-decoration: underline;
+  font-weight: 700;
+}
+/*++++++++++++++++Sebas+++++++++++++*/
+
+
+.commentBox{
+  background-color: #9999E3;
+  padding: 10px 10px 10px 10px;
+  max-width: 500px;
+}
+
+.comment{
+  background-color: #E1BC7B;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #9999E3;
+}
+
+.commentForm{
+  background-color: #43FFB1;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #9999E3;
+}
+
+input[type=text]{
+     background-color: white;
+     width: 70%;
+     display: block;
+     padding: 2px 2px 2px 2px;
+}
+
+body {
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 30px;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  font-size: 12px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+h1 {
+  border-bottom: 1px solid #ddd;
+  font-size: 2.5em;
+  font-family: 'Sigmar One', cursive;
+}
+
+h2 {
+  border-bottom: 1px solid #eee;
+  font-size: 2em;
+  font-family: 'Lobster Two', cursive;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p, ul {
+  margin: 15px 0;
+}
+
+ul {
+  padding-left: 30px;
+}

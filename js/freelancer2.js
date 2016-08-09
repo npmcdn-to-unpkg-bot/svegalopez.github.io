@@ -36,5 +36,18 @@ $( document ).ready(function() {
 	        $(".project-description").empty();
 	    }
 	});
+
+	$(".react-comments").on({
+	    mouseenter: function () {
+	        //stuff to do on mouse enter
+	        var description = "A simple front-end interface for posting comments. Built using ReactJS."
+	        $(".project-description").text(description);
+	    },
+	    mouseleave: function () {
+	        //stuff to do on mouse leave
+	        $(".project-description").empty();
+	    }
+	});
+
 });
 

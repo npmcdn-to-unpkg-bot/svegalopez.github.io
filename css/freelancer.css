@@ -109,6 +109,12 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+
+#profile-pic{
+  width:150px ;
+  height:auto;
+}
+
 .navbar-custom {
   background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
